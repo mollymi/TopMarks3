@@ -1,0 +1,141 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCourse">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSettings2"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toStartOf="@+id/topMarks2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="427dp"
+        android:layout_height="103dp"
+        android:background="#6CB2EA"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/nullText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/topMarks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Top Marks"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="338dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Course Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topMarks2"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/goalGrade"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Goal Grade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/passingGrade"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Passing Grade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalGrade"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/failingGrade"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="292dp"
+        android:ems="10"
+        android:hint="Failing Grade"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passingGrade"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <EditText
+        android:id="@+id/courseDesc"
+        android:layout_width="334dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="Course Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:text="Create"
+        app:backgroundTint="#6CB2EA"
+        app:layout_constraintBottom_toTopOf="@+id/courseDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toEndOf="@+id/passingGrade"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintVertical_bias="0.802" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
